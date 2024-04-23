@@ -7,8 +7,8 @@
 --Dark-grayish-blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
 /*Fuentes*/
---fuente-principal:font-family: "Montserrat", sans-serif;
---fuente-secundaria:  font-family: "Fraunces", serif;
+--fuente-principal:"Montserrat", sans-serif;
+--fuente-secundaria:"Fraunces", serif;
 }
 html{
     html{
@@ -31,21 +31,26 @@ body{
     position: relative;
     display: grid;
     place-content: center;
+    max-width: 1440px;
 }
 h1{
-    font-size: 4.8rem;
+    font-size: 3.2rem;
+    font-family: var(--fuente-secundaria);
+    font-weight: 700;
 }
 h2{
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 h3{
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 h4{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 p{
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--fuente-principal);
+    font-weight: 500;
 }
 .centrar-texto{
     align-items: center;
@@ -61,4 +66,19 @@ p{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     align-items: center center;
+}
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.precios{
+    font-family: var(--fuente-secundaria);
+}
+h2.precio-oferta{
+    color: var(--Darkcyan);
+}
+s{
+    color: black;
+    font-size: 1.2rem;
 }

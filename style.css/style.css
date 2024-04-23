@@ -46,6 +46,7 @@ h3{
 }
 h4{
     font-size: 1.8rem;
+    font-family: var(--fuente-principal);
 }
 p{
     font-size: 1.2rem;
@@ -67,10 +68,36 @@ p{
     grid-column-gap: 2rem;
     align-items: center center;
 }
+@media (max-width: 468px) {
+    .contenedor{
+        max-width: 375px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 468px) {
+    .subtitulo-producto{
+        text-align: center;
+    }
+}
+
+@media (max-width:468px ) {
+    .info-producto{
+        text-align: center;
+    }
+}
+
+@media (max-width:468px ) {
+    .precio-oferta{
+        text-align: center;
+    }
+}
 img{
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
+    height: 100%;
 }
 .precios{
     font-family: var(--fuente-secundaria);
@@ -81,4 +108,17 @@ h2.precio-oferta{
 s{
     color: black;
     font-size: 1.2rem;
+}
+.boton-compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }

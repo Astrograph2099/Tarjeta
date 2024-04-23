@@ -6,4 +6,54 @@
 --Very-dark-blue: hsl(212, 21%, 14%);
 --Dark-grayish-blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
+/*Fuentes*/
+--fuente-principal:font-family: "Montserrat", sans-serif;
+--fuente-secundaria:  font-family: "Fraunces", serif;
+}
+html{
+    html{
+        font-size: 62.5%;
+        box-sizing: border-box;
+    }
+    *,*before,::after{
+    box-sizing: inherit;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 150rem;
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+p{
+    font-size: 2rem;
+}
+.centrar-texto{
+    align-items: center;
+}
+.no-margen{
+    margin: 0 auto;
+}
+.contenedor{
+    max-width: 800px;
+    margin: 2rem;
+    border-radius: 1rem;
 }

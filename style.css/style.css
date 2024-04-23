@@ -26,7 +26,8 @@ html{
 body{
     font-size: 16px;
     line-height: 1.5;
-    min-height: 150rem;
+    min-height: 100rem;
+    background-color: var(--Cream);
     position: relative;
     display: grid;
     place-content: center;
@@ -56,4 +57,8 @@ p{
     max-width: 800px;
     margin: 2rem;
     border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    align-items: center center;
 }
